@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Formulario de Registro</h1>
+
+    <form id="formulario">
+        <label>Nombre</label>
+        <input type="text" id="nombre" placeholder="Nombre" required>
+
+        <label>Correo</label>
+        <input type="email" id="correo" placeholder="Email" required>
+
+        <label>Teléfono</label>
+        <input type="text" id="telefono" placeholder="Teléfono" required>
+
+        <label>Curso</label>
+        <select id="curso">
+            <option>FullStack</option>
+            <option>BackEnd</option>
+            <option>FrontEnd</option>
+            <option>DevOps</option>
+        </select>
+
+        <button type="submit">Registrar</button>
+    </form>
+
+    <!-- Ventana simple -->
+    <div id="modal" class="modal">
+        <div class="caja">
+            <p id="datos"></p>
+            <button onclick="cerrarModal()">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
