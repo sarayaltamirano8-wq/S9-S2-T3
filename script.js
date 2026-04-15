@@ -18,6 +18,8 @@ form.addEventListener("submit", function(e) {
     `;
 
     modal.style.display = "block";
+
+    form.reset();
 });
 
 function cerrarModal() {
